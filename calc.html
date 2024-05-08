@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-3">
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" id="alert" style="display: none;">
+            <strong>Warning!</strong> <span id="msg">Something went wrong......!</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" id="green" role="alert" style="display: none;">
+            <strong>Congratulations!</strong> You are pass in exams...!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+    </div>
+    <div class="container bg-white shadow mt-3 p-0 ">
+
+        <h1 class="text-center bg-success p-3">Grade Calculator</h1>
+        <div class="row p-3">
+
+            <div class="col-md-6">
+                <div class="mb-3 mt-3">
+                    <label for="math" class="form-label">math</label>
+                    <input type="number" class="form-control" id="math">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="eng" class="form-label">english</label>
+                    <input type="number" class="form-control" id="eng">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="urdu" class="form-label">urdu</label>
+                    <input type="number" class="form-control" id="urdu">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="bio" class="form-label">bio</label>
+                    <input type="number" class="form-control" id="bio">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="chem" class="form-label">chemistry</label>
+                    <input type="number" class="form-control" id="chem">
+                </div>
+                <div class="d-grid">
+                    <button type="submit" id="btn" class="btn btn-success">Submit</button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mt-5 bg-light shadow" style="width: 26rem">
+
+                    <div class="card-body">
+                        <h3 class="card-title d-flex">Result</h3>
+                        <div class="total d-flex justify-content-between">
+                            <span><b>Total Marks</b></span>
+                            <h4>500</h4>
+
+                        </div>
+                        <div class="total d-flex justify-content-between">
+                            <span><b>Obtain Marks</b></span>
+                            <h4 id="obtain"></h4>
+
+                        </div>
+
+                        <div class="total d-flex justify-content-between">
+                            <span><b>Percentage</b></span>
+                            <h4 id="percentage"></h4>
+                        </div>
+
+                        <div class="total d-flex justify-content-between">
+                            <span><b>Grade</b></span>
+                            <h4 id="grade"></h4>
+                        </div>
+                        <div class="total d-flex justify-content-between mb-3">
+                            <span><b>Remarks</b></span>
+                            <h4 id="remarks"></h4>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">Print Result</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<script src="./calc.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
