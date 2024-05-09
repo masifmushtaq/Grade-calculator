@@ -9,7 +9,7 @@ btn.addEventListener("click", function () {
     let chem = parseInt(document.getElementById('chem').value);
 
     // check if any field is empty
-    if (math == "" || eng == "" || urdu == "" || bio == "" || chem == "") {
+    if ( Number(math) == "" || Number(eng) == "" || Number(urdu) == "" || Number(bio) == "" || Number(chem) == "") {
         document.getElementById('alert').style.display = 'block';
 
     }
